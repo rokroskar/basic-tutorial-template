@@ -1,0 +1,6 @@
+- folder: RStudio
+  name: RStudio tutorial
+  description: A basic Renku tutorial in RStudio
+  variables: {}
+  icon: RStudio.png
+  ssh_supported: true
