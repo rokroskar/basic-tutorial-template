@@ -9,3 +9,8 @@
 # install.packages('ggplot2')
 
 install.packages("reticulate")
+
+## Package setup
+# configure reticulate to use the conda python installation (and not prompt for miniconda)
+library(reticulate)
+use_python("/opt/conda/bin/python3")
