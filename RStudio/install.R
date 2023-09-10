@@ -8,4 +8,4 @@
 #
 # install.packages('ggplot2')
 
-install.package("reticulate")
+install.packages("reticulate")
