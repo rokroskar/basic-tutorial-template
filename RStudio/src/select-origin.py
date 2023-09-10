@@ -1,7 +1,7 @@
 # Filters the dataset to select an origin airport
 #
 # To run as a renku workflow step:
-# renku run python code/select_origin.py "BOS" --input data/201901_us_flights_1/2019-01-flights.csv.zip
+# renku run python code/select_origin.py "BOS" --input data/2019-01_us_fli_1.0/2019-01-flights.csv.zip
 
 import pandas as pd
 import sys
@@ -11,7 +11,7 @@ try:
 except IndexError:
   origin = "BOS"
 
-df = pd.read_csv("data/201901_us_flights_1/2019-01-flights.csv.zip")
+df = pd.read_csv("data/2019-01_us_fli_1.0/2019-01-flights.csv.zip")
 df.head()
 
 is_origin =  df['ORIGIN'] == origin
