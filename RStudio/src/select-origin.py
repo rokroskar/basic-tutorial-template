@@ -1,3 +1,6 @@
+# Filters the dataset to select an origin airport
+#
+# To run as a renku workflow step:
 # renku run python code/select_origin.py "BOS" --input data/201901_us_flights_1/2019-01-flights.csv.zip
 
 import pandas as pd

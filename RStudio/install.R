@@ -7,3 +7,5 @@
 # install the `ggplot2` package.
 #
 # install.packages('ggplot2')
+
+install.package("reticulate")
