@@ -51,3 +51,6 @@ RUN pip3 install -r /tmp/requirements.txt --no-cache-dir && \
     rm -rf ${HOME}/.renku/venv
 
 COPY --from=builder ${HOME}/.renku/venv ${HOME}/.renku/venv
+
+# make sure reticulate uses the correct python
+RUN echo "RETICULATE_PYTHON=${CONDA_PATH}/bin/python3" >> /usr/local/lib/R/etc/Renviron.site
