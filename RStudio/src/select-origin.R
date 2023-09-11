@@ -11,7 +11,7 @@ if (length(origin)==0) {
   origin <- "BOS"
 }
 
-df <- read_csv(unzip("data/2019-01_us_fli_1.0/2019-01-flights.csv.zip"),
+df <- read_csv(unzip("data/2019-01_us_fli_1.0/2019-01-flights.csv.zip", exdir="/tmp"),
                col_types = cols(.default=col_guess(), CRS_DEP_TIME="I", DEP_TIME="I"))
 
 df_origin <- filter(df, ORIGIN == origin)
