@@ -1,7 +1,7 @@
 # Outputs a summary of the dataframe
 #
 # To record as a renku workflow step:
-# $ renku run Rscript code/save_summary.R "BOS" --input output/BOS.csv
+# $ renku run Rscript src/save-summary.R "BOS" --input output/BOS.csv
 
 library(ggplot2)
 library(readr)

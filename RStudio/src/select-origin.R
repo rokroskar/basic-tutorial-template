@@ -1,7 +1,7 @@
 # Filters the dataset to select an origin airport
 #
 # To run as a renku workflow step:
-# $ renku run Rscript code/select_origin.R BOS --input data/2019-01_us_fli_1.0/2019-01-flights.csv.zip
+# $ renku run Rscript src/select-origin.R BOS --input data/2019-01_us_fli_1.0/2019-01-flights.csv.zip
 
 library(readr)
 library(dplyr)
