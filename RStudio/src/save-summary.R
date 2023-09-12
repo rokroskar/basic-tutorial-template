@@ -1,7 +1,7 @@
 # Outputs a summary of the dataframe
 #
 # To record as a renku workflow step:
-# $ renku run Rscript src/save-summary.R --input output/filtered.csv
+# $ renku run Rscript src/save-summary.R --name summarize --input output/filtered.csv
 
 library(ggplot2)
 library(readr)

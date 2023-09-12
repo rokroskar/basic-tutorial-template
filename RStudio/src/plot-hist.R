@@ -1,7 +1,7 @@
 # Make a histogram of delayed flights
 #
 # To record as a renku workflow step:
-# $ renku run Rscript src/plot-hist.R --input output/filtered.csv
+# $ renku run Rscript src/plot-hist.R --name plot --input output/filtered.csv
 
 library(ggplot2)
 library(readr)
